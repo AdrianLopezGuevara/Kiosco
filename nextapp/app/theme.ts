@@ -17,7 +17,29 @@ const theme = createTheme({
         },
         primary: {
             main: '#4b6e4e',
+            contrastText: '#fff',
         },
+        secondary: {
+            main: '#f50057',
+            contrastText: '#fff',
+        },
+        error: {
+            main: '#f44336',
+            contrastText: '#fff',
+        },
+        warning: {
+            main: '#ff9800',
+            contrastText: '#fff',
+        },
+        info: {
+            main: '#2196f3',
+            contrastText: '#fff',
+        },
+        success: {
+            main: '#4caf50',
+            contrastText: '#fff',
+        },
+        
     },
     typography: {
         fontFamily: roboto.style.fontFamily,
