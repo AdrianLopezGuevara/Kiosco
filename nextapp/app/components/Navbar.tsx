@@ -6,6 +6,8 @@ import Drawer from '@mui/material/Drawer';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import { categories } from '../order/test';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import Link from 'next/link';
 const drawerWidth = 300;
 
 const Navbar = () => {
@@ -16,9 +18,12 @@ const Navbar = () => {
                 sx={{ width: `calc(100% - ${drawerWidth}px)`, ml: `${drawerWidth}px` }}
             >
                 <Toolbar>
-                    <Typography variant="h6" noWrap component="div">
-                        Order
+                    <Typography variant="h6" noWrap component="div" className='flex-1'>
+                        Cafe Shop
                     </Typography>
+                    <Link href={'/cart'}>
+                        <ShoppingCartIcon className='justify-end' />
+                    </Link>
                 </Toolbar>
             </AppBar>
             <Drawer
@@ -35,7 +40,7 @@ const Navbar = () => {
             >
                 <Toolbar>
                     <Typography variant="h5" noWrap component="div">
-                        Cafe Shop
+                        Categories
                     </Typography>
                 </Toolbar>
                 <Divider />
