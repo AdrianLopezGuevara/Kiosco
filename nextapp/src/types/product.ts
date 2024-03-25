@@ -1,11 +1,11 @@
-type Product = {
+export type Product = {
     id: number;
     name: string;
     price: number;
     image: string;
 };
 
-type OrderItem = {
+export type OrderItem = {
     product: Product;
     subTotal: number;
     quantity: number;
