@@ -5,8 +5,8 @@ import NavbarItem from '../components/NavbarItem';
 import Drawer from '@mui/material/Drawer';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
-import { categories } from '../order/categories';
-const drawerWidth = 340;
+import { categories } from '../order/test';
+const drawerWidth = 300;
 
 const Navbar = () => {
     return (
@@ -41,7 +41,7 @@ const Navbar = () => {
                 <Divider />
                 <List>
                     {categories.map((category) => (
-                        <NavbarItem key={category.id} {...category} />
+                        <NavbarItem key={category.id} category={category} />
                     ))}
                 </List>
                 <Divider />
